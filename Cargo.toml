@@ -1,6 +1,6 @@
 
 [package]
-name = "hello-rust"
+name = "basic"
 version = "0.1.0"
 edition = "2021"
 
