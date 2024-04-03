@@ -1,21 +1,15 @@
-mod utils;
 
-// comment here
 use std::io;
-use utils::number;
 
 fn main() {
-    println!("Guess the number!");
+    println!("Guessing the number");
+    println!("Enter a number: ");
 
-    println!("Please input your guess:");
-
-    let mut guess = String::new();
-
+    let mut number = String::new();
     io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read input");
+    .read_line( &mut number)
+    .expect("Failed to get a number");
 
-    println!("You guess: {guess}");
-
-    println!("number {}", number());
+    println!("Your number is {number}");   
+    
 }
